@@ -1,12 +1,8 @@
-import './App.css';
-import { Button } from '@fluentui/react-components';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes';
 
 function App() {
-  return (
-    <>
-      <Button appearance="primary">Click me</Button>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
